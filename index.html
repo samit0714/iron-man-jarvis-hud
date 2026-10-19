@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J.A.R.V.I.S HUD</title>
+  </head>
+  <body>
+    
+    <div id="app"></div>
+    
+    
+    <div id="flash-overlay"></div>
+    
+    
+    <div class="hud-container">
+        <div class="hud-left">
+            <h3>SYS.TARGETING</h3>
+            <p>TRACKING: <span id="tracking-status">ONLINE</span></p>
+            <p>ENERGY: <span id="energy-level">94</span>%</p>
+            <p>COORDINATES: <span id="coordinates">0.00, 0.00</span></p>
+            <p class="blink">SCANNING SECTOR...</p>
+        </div>
+
+        <div class="hud-right">
+            <h3>J.A.R.V.I.S.</h3>
+            <p>PROTOCOL: ACTIVE</p>
+            <p>WEAPONS: STANDBY</p>
+            <p>SERVER: LOCALHOST</p>
+            <p>PING: <span id="ping-rate">12</span>ms</p>
+        </div>
+
+       
+        <div class="crosshair">
+            <div class="circle"></div>
+            <div class="horizontal"></div>
+            <div class="vertical"></div>
+        </div>
+    </div>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
